@@ -4,10 +4,16 @@
   <title>OHN.html Page</title>
 </head>
 <body>
+  <header>
+    <a href = "index.html">Home</a>
+  </header>
+  <br>
   <div>  <!-- Used embed code from Youtube -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/c4T4V3H0ajI" frameborder="0" allowfullscreen></iframe>
     </div>
-
+    <div>
+      <a href = "http://www.omloophetnieuwsblad.be/en">Omloop Official Site</a>
+    </div>
 <table border = "1px">
             <tr>
               <th>Year</th>
@@ -19,7 +25,67 @@
               <td>Greg van Avermaet</td>
               <td>Belgium</td>
             </tr>
+            <tr>
+              <td>2016</td>
+              <td>Greg van Avermaet</td>
+              <td>Belgium</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>Ian Stannard</td>
+              <td>Great Britain</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>Ian Stannard</td>
+              <td>Great Britain</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>Luca Paolini</td>
+              <td>Italy</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>Sep Vanmarcke</td>
+              <td>Belgium</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>Sebastian Langeveld</td>
+              <td>Netherlands</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>Juan Antonio Flecha</td>
+              <td>Spain</td>
+            </tr>
           </table>
+          <div>
+            <h5>Please take a few moments to fill out our form below, thanks!</h5>
+            <form name = "name" action = "https://httpbin.org/post" method = "post">
+              <fieldset>
+                <div>
+                  <label>Name: </label>
+                  <input type = "text" name = "name">
+                </div>
+                <div>
+                  <label>Email: </label>
+                  <input type = "email" name = "email">
+                </div>
+              </fieldset>
+            </form>
+            <form name = "checkbox" action = "https://httpbin.org/get" method = "get">
+              <fieldset>
+              <label>Interest in hearing more about this race: </label><br>
+              <input type = "checkbox" name = "interest" value = "high">My interest level is high!<br>
+              <input type = "checkbox" name = "interest" value = "medium">I could be swayed...<br>
+              <input type = "checkbox" name = "interest" value = "low">I'm probably never reading about this again.<br>
+              <input type = "submit" value = "submit">
+            </fieldset>
+          </form>
+            </div>
+            <br>
     <footer>
       <a href = "index.html">Home</a>
     </footer>
