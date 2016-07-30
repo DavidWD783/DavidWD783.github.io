@@ -8,6 +8,8 @@ main {
   padding: 1px;
   display: inline-block;
   width: 95%;
+  font-size: 1em;
+  color: #585858;
 }
 
 #top-intro {
@@ -34,28 +36,28 @@ border: none;
 
 /* Styling for links in nav */
 
-li>a:link {
+.nav-link:link {
   color: blue;
   font-size: 21px;
   -webkit-text-stroke: 1px black;
   text-decoration: none;
 }
 
-li>a:visited {
-  color: blue;
+.nav-link:visited {
+  color: #9e41ee;
   -webkit-text-stroke: 1px black;
   text-decoration: none;
   font-size: 18px;
   }
 
-li>a:hover {
+.nav-link:hover {
   color: blue;
   font-size: 22px;
   -webkit-text-stroke: 1px black;
   text-decoration: none;
 }
 
-li>a:active {
+.nav-link:active {
   color: green;
   font-size: 25px;
   -webkit-text-stroke: 1px black;
@@ -74,40 +76,63 @@ li>a:active {
 }
 
 .second-header {
-  color: #585858;
   font-size: 2em;
-  text-align: center;
   -webkit-text-stroke: 1px black;
 }
 
 .second-para {
   margin: 3px;
   text-align: left;
-  color: #5858585;
-  font-size: 1em;
 }
 
-/* Styling of links in second header */
-p>a:link {
+/* Styling of links not in navbar */
+a:link {
   color: blue;
   font-size: 1em;
   text-decoration: none;
 }
 
-p>a:visited {
-  color: blue;
+a:visited {
+  color: #9e41ee;
   text-decoration: none;
   font-size: 1em;
   }
 
-p>a:hover {
+a:hover {
   color: blue;
   font-size: 1.2em;
   text-decoration: none;
 }
 
-p>a:active {
+a:active {
   color: green;
   font-size: 1.1em;
   text-decoration: none;
+}
+
+/* Styling for third-section with list/table/pics/links */
+
+#third-section {
+  border: 1px solid black;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+.third-header {
+
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+  /* for smaller than */
+}
+img {
+  border: 1px solid black;
+  height: 60%;
+  width: 100%;
 }
