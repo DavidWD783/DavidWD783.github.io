@@ -1,6 +1,6 @@
 body {
     background-color: #e7e8e8;
-    border: 1px solid black;
+    border: none;
     text-align: center;
 }
 main {
@@ -25,6 +25,14 @@ main {
   margin-top: 1%;
   position: relative;
   display: block;
+}
+
+@media only screen and (max-width: 400px) {
+    #top-intro {
+        background-image: url("http://www.slate.com/content/dam/slate/articles/life/family/2012/05/120511_FAM_BalanceBike2EX.jpg.CROP.thumbnail-small.jpg");
+        font-size: .5em;
+        width: auto;
+    }
 }
 
 #top-nav ul{
@@ -66,7 +74,7 @@ border: none;
 
 /* secondary intro styling */
 #second-intro {
-  border: 1px solid black;
+  border: none;
   text-align: center;
   background-image: none;
   width: 100%;
@@ -78,10 +86,11 @@ border: none;
 .second-header {
   font-size: 2em;
   -webkit-text-stroke: 1px black;
+  display: inline-block;
 }
 
 .second-para {
-  margin: 3px;
+  margin: 10px 5px 5px 5px;
   text-align: left;
 }
 
@@ -113,7 +122,7 @@ a:active {
 /* Styling for third-section with list/table/pics/links */
 
 #third-section {
-  border: 1px solid black;
+  border: none;
   text-align: left;
   display: inline-block;
   width: 100%;
@@ -124,6 +133,8 @@ a:active {
 }
 
 .third-list {
+  border: none;
+  margin-bottom: 5px;
   text-align: center;
   list-style-type: none;
   font-size: 1.3em;
@@ -132,11 +143,18 @@ a:active {
 table {
   width: 75%;
   height: 75%;
-  border: 1px solid black;
+  border: none;
   display: inline-block;
   text-align: center;
   background-size: contain;
-  /* for smaller than */
+}
+
+@media only screen and (max-width: 400px) {
+      iframe {
+      background-image: url("http://www.slate.com/content/dam/slate/articles/life/family/2012/05/120511_FAM_BalanceBike2EX.jpg.CROP.thumbnail-small.jpg");
+        font-size: .5em;
+        width: 100%;
+    }
 }
 
 img {
@@ -147,16 +165,32 @@ img {
 }
 
 .table-content {
-  border: 1px solid black;
+  overflow-x: auto;
   text-align: center;
-  width: 100%;
   display: inline-block;
 }
 
-.table-content a {
-  text-align: center;
-
-}
-.winners table, th, td {
+.winners table, tr, th, td {
   border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+  table-layout: fixed;
 }
+
+.video-container {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+#reference {
+  display: inline-block;
+  text-align: left;
+  width: 95%;
+  font-size: .25em;
+}
+
+
+
